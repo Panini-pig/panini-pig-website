@@ -31,10 +31,13 @@
         <span></span><span></span>
       </button>
       <nav class="site-nav" aria-label="主导航">
-        <a href="#features">功能</a>
+        <a href="#top">首页</a>
+        <a href="#features">核心功能</a>
         <a href="#workflow">使用流程</a>
         <a href="#screens">界面预览</a>
         <a class="nav-download" href="#download">获取工具</a>
+        <a href="#pricing">购买支付</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
     </header>
 
@@ -194,30 +197,48 @@
           </div>
         </div>
       </section>
+
+      <section class="pricing-section section-shell" id="pricing">
+        <div class="pricing-intro reveal">
+          <p class="eyebrow"><span></span> 简单透明的定价</p>
+          <h2>按需使用，<br />不设隐藏费用。</h2>
+          <p>支付完成后，请通过任一联系方式将付款截图发给作者确认；激活码将通过同一联系方式人工回复发送。</p>
+        </div>
+        <div class="pricing-panel reveal">
+          <div class="pricing-cards">
+            <article class="price-card featured"><span class="price-label">首次使用</span><strong>¥14.9</strong><p>首次获取激活码</p></article>
+            <article class="price-card"><span class="price-label">后续使用</span><strong>¥9.9</strong><p>后续每次使用</p></article>
+          </div>
+          <button class="go-pay" type="button">去支付</button>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer section-shell">
-      <a class="brand" href="#top"><span class="brand-mark">D</span><span>抖音聊天档案助手</span></a>
+      <a class="brand" href="#top"><img class="brand-logo" src="images/site-icon.png" alt="" /><span>抖音聊天档案助手</span></a>
       <div class="footer-contact">
         <p>请仅使用本工具导出和备份自己有权访问的聊天记录。</p>
         <address>联系方式：微信 / QQ <b>2778934515</b> · <a href="mailto:2778934515@qq.com">2778934515@qq.com</a></address>
       </div>
       <div class="footer-actions">
-        <button class="support-button" type="button" aria-haspopup="dialog">♡ 支持作者</button>
+        <a href="#pricing">购买与支付</a>
         <a href="#top" aria-label="回到页面顶部">回到顶部 ↑</a>
       </div>
     </footer>
 
-    <dialog class="support-dialog" aria-labelledby="support-title">
-      <div class="support-dialog-header">
-        <div><p class="eyebrow"><span></span> THANK YOU</p><h2 id="support-title">支持作者</h2></div>
-        <button class="dialog-close" type="button" aria-label="关闭支持作者弹窗">×</button>
+    <dialog class="purchase-dialog" aria-labelledby="purchase-title">
+      <div class="purchase-dialog-header">
+        <div><p class="eyebrow"><span></span> PURCHASE</p><h2 id="purchase-title">确认支付</h2></div>
+        <button class="dialog-close" type="button" aria-label="关闭支付弹窗">×</button>
       </div>
-      <p class="support-description">如果这个工具对你有帮助，欢迎扫码赞赏。感谢你的支持。</p>
+      <div class="checkout-summary"><span>请按页面价格自行填写付款金额</span><strong>¥14.9 / ¥9.9</strong></div>
+      <p class="purchase-description">请使用以下任一付款码支付相应金额。付款完成后，将付款截图发送给作者，核实后会人工发送激活码。</p>
       <div class="payment-grid">
         <figure><img src="images/wechat-pay.jpg" alt="微信收款码" /><figcaption><b>微信支付</b><span>使用微信扫一扫</span></figcaption></figure>
         <figure><img src="images/alipay.jpg" alt="支付宝收款码" /><figcaption><b>支付宝</b><span>打开支付宝扫一扫</span></figcaption></figure>
       </div>
+      <ol class="payment-steps"><li>选择支付方式并扫码付款。</li><li>截图保存付款成功页面。</li><li>通过页面下方任一联系方式发送截图，等待激活码回复。</li></ol>
+      <p class="payment-note">本页面不自动扣款、不收集付款信息，也不自动发放激活码。</p>
     </dialog>
     <script src="script.js"></script>
   </body>
