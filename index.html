@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="抖音聊天档案助手：将自己的抖音私信记录留存在本地，便于浏览、搜索与导出。"
+    />
+    <title>抖音聊天档案助手 · V1.6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">D</span>
+        <span>抖音聊天档案助手</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="打开导航菜单" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#features">功能</a>
+        <a href="#workflow">使用流程</a>
+        <a href="#screens">界面预览</a>
+        <a class="nav-download" href="#download">获取工具</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> WINDOWS 便携版 · V1.6</p>
+          <h1>把每一段聊天，<br /><em>好好留在自己手里。</em></h1>
+          <p class="hero-text">
+            面向个人聊天备份的本地工具。采集、补全媒体、浏览搜索与多格式导出，都在你的电脑上完成。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">获取 Windows 版 <span>↓</span></a>
+            <a class="button button-quiet" href="#features">了解功能 <span>↘</span></a>
+          </div>
+          <p class="notice">仅用于导出并备份自己的聊天记录</p>
+        </div>
+        <div class="hero-art reveal">
+          <div class="art-grid"></div>
+          <div class="chat-card card-one">
+            <span class="avatar avatar-pink"></span>
+            <div><b>聊天档案</b><small>本地保存 · 随时查看</small></div>
+            <i>✓</i>
+          </div>
+          <div class="chat-card card-two">
+            <span class="avatar avatar-blue"></span>
+            <div><b>媒体已补全</b><small>图片 · 视频 · 语音</small></div>
+            <i>↗</i>
+          </div>
+          <div class="dashboard-preview" aria-hidden="true">
+            <div class="preview-sidebar"><span></span><span></span><span></span><span></span></div>
+            <div class="preview-main">
+              <div class="preview-head"><b>聊天记录</b><span>搜索记录</span></div>
+              <div class="message-row incoming">今天的照片已经整理好了</div>
+              <div class="message-row outgoing">好的，已经保存到档案里</div>
+              <div class="message-row incoming short">收到 ✓</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div><b>V1.6</b><span>当前归档版本</span></div>
+        <div><b>55 项</b><span>后端回归测试通过</span></div>
+        <div><b>22 项</b><span>前端测试通过</span></div>
+        <div><b>本地优先</b><span>不上传聊天数据库</span></div>
+      </section>
+
+      <section class="section-shell feature-section" id="features">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 核心能力</p>
+          <h2>从一段对话，<br />到一份完整档案。</h2>
+          <p>为日常备份设计，重要内容不必被网页滚动和临时链接困住。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-large reveal">
+            <div class="feature-icon icon-message">✦</div>
+            <p class="feature-number">01</p>
+            <h3>完整采集历史消息</h3>
+            <p>支持增量更新与多种消息类型，按服务端时间顺序整理，让历史对话保持连贯。</p>
+            <div class="mini-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon icon-media">⌁</div>
+            <p class="feature-number">02</p>
+            <h3>媒体补全与本地化</h3>
+            <p>图片、表情、视频、语音和远程图片分开管理，避免链接过期后无法查看。</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon icon-search">⌕</div>
+            <p class="feature-number">03</p>
+            <h3>轻松浏览与搜索</h3>
+            <p>内置聊天查看器，可全文检索并一键回到原消息，支持图片放大与媒体播放。</p>
+          </article>
+          <article class="feature-card feature-wide reveal">
+            <div>
+              <p class="feature-number">04</p>
+              <h3>把记录带到需要的地方</h3>
+              <p>支持 JSON、JSONL、Excel 与 HTML 档案导出；ChatLab 格式可用于后续 AI 聊天分析。</p>
+            </div>
+            <div class="export-tags"><span>JSON</span><span>EXCEL</span><span>HTML</span><span>JSONL</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow-section" id="workflow">
+        <div class="section-shell">
+          <div class="workflow-intro reveal">
+            <p class="eyebrow"><span></span> 简明流程</p>
+            <h2>四步完成<br />个人聊天备份。</h2>
+          </div>
+          <ol class="steps">
+            <li class="reveal"><span>01</span><div><h3>扫码登录</h3><p>在本地浏览器完成账号登录。</p></div></li>
+            <li class="reveal"><span>02</span><div><h3>刷新会话</h3><p>选择需要保存的聊天对象。</p></div></li>
+            <li class="reveal"><span>03</span><div><h3>采集与补全</h3><p>下载并整理需要的媒体内容。</p></div></li>
+            <li class="reveal"><span>04</span><div><h3>导出档案</h3><p>导出为适合留存或分析的格式。</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-shell screen-section" id="screens">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow"><span></span> 界面预览</p>
+          <h2>清晰查看，安心整理。</h2>
+        </div>
+        <div class="screen-grid">
+          <figure class="screen-card reveal">
+            <img src="images/chat-viewer.png" alt="聊天记录浏览界面预览" />
+            <figcaption><span>聊天查看器</span><small>搜索、跳转与媒体预览</small></figcaption>
+          </figure>
+          <figure class="screen-card reveal">
+            <img src="images/control-panel.png" alt="控制面板界面预览" />
+            <figcaption><span>控制面板</span><small>采集、导出与状态管理</small></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="download-section" id="download">
+        <div class="section-shell download-wrap reveal">
+          <div>
+            <p class="eyebrow light"><span></span> WINDOWS 便携版</p>
+            <h2>准备好整理你的<br />聊天档案了吗？</h2>
+            <p>点击前往夸克网盘，获取“抖音客户便携版 1.4 - HTML”文件。</p>
+          </div>
+          <a
+            class="quark-link"
+            href="https://pan.quark.cn/s/0d538628d26a?pwd=XtcY"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="前往夸克网盘下载"
+          >
+            <img src="https://leixue.com/uploads/2024/12/QuarkCloudDrive.png" alt="夸克网盘" />
+            <span><b>夸克网盘</b><small>提取码：XtcY</small></span>
+            <strong>前往下载 ↗</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="#top"><span class="brand-mark">D</span><span>抖音聊天档案助手</span></a>
+      <p>请仅使用本工具导出和备份自己有权访问的聊天记录。</p>
+      <a href="#top" aria-label="回到页面顶部">回到顶部 ↑</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
