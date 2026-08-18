@@ -202,8 +202,23 @@
         <p>请仅使用本工具导出和备份自己有权访问的聊天记录。</p>
         <address>联系方式：微信 / QQ <b>2778934515</b> · <a href="mailto:2778934515@qq.com">2778934515@qq.com</a></address>
       </div>
-      <a href="#top" aria-label="回到页面顶部">回到顶部 ↑</a>
+      <div class="footer-actions">
+        <button class="support-button" type="button" aria-haspopup="dialog">♡ 支持作者</button>
+        <a href="#top" aria-label="回到页面顶部">回到顶部 ↑</a>
+      </div>
     </footer>
+
+    <dialog class="support-dialog" aria-labelledby="support-title">
+      <div class="support-dialog-header">
+        <div><p class="eyebrow"><span></span> THANK YOU</p><h2 id="support-title">支持作者</h2></div>
+        <button class="dialog-close" type="button" aria-label="关闭支持作者弹窗">×</button>
+      </div>
+      <p class="support-description">如果这个工具对你有帮助，欢迎扫码赞赏。感谢你的支持。</p>
+      <div class="payment-grid">
+        <figure><img src="images/wechat-pay.jpg" alt="微信收款码" /><figcaption><b>微信支付</b><span>使用微信扫一扫</span></figcaption></figure>
+        <figure><img src="images/alipay.jpg" alt="支付宝收款码" /><figcaption><b>支付宝</b><span>打开支付宝扫一扫</span></figcaption></figure>
+      </div>
+    </dialog>
     <script src="script.js"></script>
   </body>
 </html>

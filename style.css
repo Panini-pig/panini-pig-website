@@ -47,6 +47,32 @@ h1 em { color:var(--coral); font-style:normal; }
 /* Four equally weighted cards keep the capability section as a clean 2 × 2 grid. */
 .feature-wide { grid-column:auto; min-height:255px; flex-direction:column; justify-content:space-between; align-items:flex-start; }
 
+.footer-actions { display:flex; align-items:center; gap:15px; }
+.support-button { border:1px solid #ffb7a9; background:#fff3ef; color:#d55441; border-radius:999px; padding:8px 11px; font:600 12px "Noto Sans SC",sans-serif; cursor:pointer; }
+.support-button:hover { background:#ffe2db; }
+.support-dialog { width:min(760px, calc(100% - 32px)); padding:28px; border:1px solid #e4e5e9; border-radius:18px; background:#f8f7f4; color:var(--ink); box-shadow:0 28px 100px #070b17a6; }
+.support-dialog::backdrop { background:#070b17b8; backdrop-filter:blur(5px); }
+.support-dialog-header { display:flex; justify-content:space-between; align-items:flex-start; }
+.support-dialog h2 { margin:0; font-size:30px; letter-spacing:-.06em; }
+.support-dialog .eyebrow { margin-bottom:8px; }
+.dialog-close { border:0; width:36px; height:36px; border-radius:50%; background:#e9e9ec; color:#313747; font-size:25px; line-height:1; cursor:pointer; }
+.support-description { margin:13px 0 22px; color:var(--muted); font-size:13px; }
+.payment-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.payment-grid figure { margin:0; overflow:hidden; border:1px solid var(--line); border-radius:12px; background:#fff; }
+.payment-grid img { width:100%; display:block; aspect-ratio:.75; object-fit:cover; object-position:top; }
+.payment-grid figcaption { padding:12px 14px; }
+.payment-grid b,.payment-grid span { display:block; }.payment-grid b { font-size:14px; }.payment-grid span { margin-top:3px; font-size:11px; color:#7c8492; }
+html[data-theme="dark"] .support-button { background:#39252a; border-color:#754450; color:#ffb9ad; }
+html[data-theme="dark"] .support-dialog { background:#1b2130; border-color:#30394d; }
+html[data-theme="dark"] .dialog-close { background:#30394d; color:#f2f4fa; }
+html[data-theme="dark"] .payment-grid figure { background:#fff; }
+
+@media (max-width:800px) {
+  .footer-actions { width:100%; justify-content:space-between; }
+  .support-dialog { padding:20px; }
+  .payment-grid { grid-template-columns:1fr; }
+}
+
 html[data-theme="dark"] { --ink:#f2f4fa; --muted:#aeb6c7; --paper:#111522; --line:#30384b; --navy:#090d17; }
 html[data-theme="dark"] .site-header { background:#111522e8; border-color:#283043; }
 html[data-theme="dark"] .site-nav a:not(.nav-download),html[data-theme="dark"] .site-footer,html[data-theme="dark"] .site-footer>a:last-child { color:#b9c1d1; }

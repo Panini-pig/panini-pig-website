@@ -47,3 +47,13 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+const supportButton = document.querySelector('.support-button');
+const supportDialog = document.querySelector('.support-dialog');
+const dialogClose = document.querySelector('.dialog-close');
+
+supportButton?.addEventListener('click', () => supportDialog?.showModal());
+dialogClose?.addEventListener('click', () => supportDialog?.close());
+supportDialog?.addEventListener('click', (event) => {
+  if (event.target === supportDialog) supportDialog.close();
+});
