@@ -180,3 +180,15 @@ html[data-theme="dark"] .version-archive { background:#2b2229; border-color:#704
   .site-nav.open a { opacity:1; transform:translateY(0); }
   .site-nav.open a:nth-child(1) { transition-delay:.05s; }.site-nav.open a:nth-child(2) { transition-delay:.09s; }.site-nav.open a:nth-child(3) { transition-delay:.13s; }.site-nav.open a:nth-child(4) { transition-delay:.17s; }.site-nav.open a:nth-child(5) { transition-delay:.21s; }.site-nav.open a:nth-child(6) { transition-delay:.25s; }
 }
+
+/* Independent FAQ page entry on the main showcase. */
+.faq-entry { margin-bottom:118px; padding:38px 42px; display:grid; grid-template-columns:1fr auto; gap:48px; align-items:center; border:1px solid var(--line); border-radius:18px; background:linear-gradient(135deg,#fff 0%,#fff8f5 100%); overflow:hidden; position:relative; }
+.faq-entry::after { content:"?"; position:absolute; right:230px; top:50%; transform:translateY(-54%); color:#ff61490b; font:800 190px/1 "DM Mono",monospace; pointer-events:none; }
+.faq-entry h2 { margin:0 0 15px; font-size:clamp(30px,3.5vw,46px); line-height:1.16; letter-spacing:-.065em; }
+.faq-entry-copy>p:last-child { margin:0; max-width:590px; color:var(--muted); font-size:14px; line-height:1.85; }
+.faq-entry-action { min-width:210px; display:flex; flex-direction:column; align-items:center; gap:13px; position:relative; z-index:1; }
+.faq-entry-mark { width:64px; height:64px; display:grid; place-items:center; border-radius:20px; background:var(--navy); color:#fff; font:700 29px "DM Mono",monospace; transform:rotate(5deg); }
+.faq-entry-action small { color:var(--muted); font-size:11px; }
+html[data-theme="dark"] .faq-entry { background:linear-gradient(135deg,#1b2130 0%,#30242b 100%); border-color:#3b4357; }
+html[data-theme="dark"] .faq-entry-mark { background:#f2f4fa; color:#171b27; }
+@media (max-width:800px) { .faq-entry { margin-bottom:78px; padding:28px 24px; grid-template-columns:1fr; gap:28px; }.faq-entry::after { right:-15px; top:64%; }.faq-entry-action { align-items:flex-start; }.faq-entry-mark { display:none; } }
