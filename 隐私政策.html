@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="抖音聊天档案助手隐私政策" />
+  <title>隐私政策｜抖音聊天档案助手</title>
+  <link rel="icon" type="image/png" href="images/site-icon.png" />
+  <link rel="apple-touch-icon" href="images/site-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="legal.css" />
+</head>
+<body class="legal-page" id="top">
+  <header class="site-header legal-header">
+    <a class="brand" href="./" aria-label="返回主页"><img class="brand-logo" src="images/site-icon.png" alt="" /><span>抖音聊天档案助手</span></a>
+    <button class="theme-toggle" type="button" aria-label="切换至白天模式" aria-pressed="true"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-text">夜间</span></button>
+    <a class="legal-home-link" href="./">← 返回主页</a>
+  </header>
+  <main>
+    <section class="legal-hero section-shell reveal">
+      <p class="eyebrow"><span></span> PRIVACY POLICY</p>
+      <h1>隐私政策</h1>
+      <p>这里说明聊天数据、激活信息、第三方服务以及您可以行使的个人信息权利。</p>
+    </section>
+    <article class="legal-document reveal">
+    <p class="meta">版本：1.1　更新及生效日期：2026年8月24日</p>
+    <div class="answer">
+      <div><b>我能看到您的聊天吗？</b>不能。聊天正文、图片、视频、语音和导出文件主要留在您的电脑，不会上传到我的激活码数据库。</div>
+      <div><b>别人能看到吗？</b>我不会主动提供给别人。但能操作您电脑、拿到整个程序目录或导出文件的人可能看到，所以请保护好电脑和文件。</div>
+      <div><b>后台会收到什么？</b>用于激活的电脑派生代码、抖音 UID/抖音号/昵称、登录会话哈希、激活状态和导出次数。</div>
+      <div><b>数据在哪里？</b>聊天数据在您的电脑；激活数据存放在 Supabase 日本东京地区；静态网站由 Cloudflare 托管。</div>
+    </div>
+
+    <p>本政策说明个人经营者顾健炜（以下简称“我”或“运营者”）在您访问 <a href="https://panini-pigs.cn/">panini-pigs.cn</a>、使用抖音聊天档案助手、购买和激活服务或联系客服时如何处理个人信息。</p>
+
+    <section><h2>一、运营者和联系方式</h2>
+      <table><tr><th>运营者</th><td>个人经营者：顾健炜</td></tr><tr><th>隐私联系电话</th><td><a href="tel:13962096395">13962096395</a></td></tr><tr><th>微信 / QQ</th><td>2778934515</td></tr><tr><th>邮箱</th><td><a href="mailto:2778934515@qq.com">2778934515@qq.com</a></td></tr></table>
+      <p>您可以通过以上任一方式咨询、要求查询或删除后台信息、撤回同意或进行投诉。一般会在核验必要身份后15个工作日内答复。</p>
+    </section>
+
+    <section><h2>二、聊天数据如何处理</h2>
+      <p>当您在自己的电脑上登录抖音、刷新会话、采集、浏览、搜索或导出时，软件会在本机处理：</p>
+      <ul><li>抖音浏览器登录状态和 Cookie；</li><li>聊天对象/群聊名称、账号标识、头像和会话信息；</li><li>聊天正文、发送时间、发送人和回复关系；</li><li>您选择补全的图片、视频、语音、表情、头像和分享卡片；</li><li>任务进度、错误日志、聊天数据库和导出的 Excel、HTML、JSON、JSONL、ZIP 文件。</li></ul>
+      <p><b>这些内容主要保存在软件目录的 `data` 文件夹或您选择的导出位置，不会作为激活信息上传到我的 Supabase 数据库，我也不能通过后台浏览您的聊天正文或媒体。</b></p>
+      <p>软件需要直接访问抖音网页或相应媒体服务器，才能读取您选择的会话和下载媒体；这些请求仍受抖音自身协议和隐私政策约束。</p>
+      <div class="note"><b>重要安全提示：</b>`chat.db`、浏览器配置、媒体、日志和常见导出文件不是默认整体加密。拿到这些文件或能够操作该电脑的人可能读取内容。请使用可信电脑、设置 Windows 密码和磁盘加密，不要把整个程序文件夹发给他人。</div>
+    </section>
+
+    <section><h2>三、激活后台会收到什么</h2>
+      <p>只有激活、校验授权和记录导出次数时，软件才会向日本地区的 Supabase 授权后台发送必要信息：</p>
+      <table><tr><th>信息</th><th>用途</th></tr><tr><td>激活码、授权令牌及其哈希</td><td>确认是否已经购买并防止激活码被盗用</td></tr><tr><td>电脑派生代码（设备标识）</td><td>把激活码绑定到当前电脑。代码由计算机名、网卡硬件标识、处理器环境等在本机组合后进行哈希计算；后台不需要读取您的电脑文件</td></tr><tr><td>抖音 UID、昵称、抖音号</td><td>把激活码绑定到当前抖音账号，方便后台识别订单</td></tr><tr><td>登录会话哈希</td><td>辅助确认是否是同一登录会话；上传的是由 `sessionid` 计算出的哈希，不是原始 Cookie</td></tr><tr><td>激活时间、到期时间、状态和导出次数</td><td>判断激活码是否有效、还有几次导出以及处理退款</td></tr><tr><td>订单号、金额、联系平台和必要操作日志</td><td>订单核对、客服、退款和安全审计</td></tr></table>
+      <p><b>后台不需要也不会主动接收聊天正文、聊天数据库、图片、视频、语音或导出文件。</b>如果您联系客服，也请优先提供错误提示或脱敏截图，不要发送完整聊天数据库、Cookie 或无关的聊天内容。</p>
+    </section>
+
+    <section><h2>四、网站、支付和第三方服务</h2>
+      <ul><li><b>Cloudflare：</b>网站是静态展示网页，由 Cloudflare 提供托管、加速和安全服务。访问时可能处理 IP 地址、访问时间、浏览器、访问路径和安全日志。我不使用这些信息做广告画像。</li><li><b>Google Fonts：</b>当前网站会从 Google 加载字体，Google 可能收到 IP、浏览器和字体请求信息。为减少不必要的境外请求，后续建议改为本地字体。</li><li><b>Supabase：</b>激活后台位于日本东京，用于存储第三条所列激活数据，不存储聊天数据库。</li><li><b>微信/支付宝：</b>网站只展示收款码，不会读取您的支付密码、验证码或银行卡。您主动发送的付款截图可能包含付款昵称、时间、金额和订单号，请遮住无关信息。</li><li><b>网盘、QQ和邮箱：</b>点击下载或联系客服后，相应第三方会按照其自己的规则处理账号、IP、下载或沟通信息。</li></ul>
+      <p>由于 Supabase 位于日本，激活信息会在中国大陆以外处理。激活前应单独向您说明境外接收方、信息种类和用途并取得所需的单独同意；如果您不同意，付费激活功能将无法使用。</p>
+    </section>
+
+    <section><h2>五、信息保存多久</h2>
+      <table><tr><th>信息</th><th>保存规则</th></tr><tr><td>本机聊天、媒体、登录状态、日志和导出文件</td><td>由您自己决定保存多久。我无法从后台删除您的本机文件；不再需要时可运行“一键清理客户数据”，另行复制的导出文件需由您自行删除</td></tr><tr><td>Supabase 中的激活、设备、抖音账号绑定、次数和订单记录</td><td>自最后一次服务结束后最多保存3年，用于退款、订单和争议核对；到期后删除或匿名化。没有继续保存必要时可以提前删除</td></tr><tr><td>客服沟通、付款截图和故障材料</td><td>问题处理完成后最多保存1年；如果含有您误发的聊天内容或敏感信息，会在完成处理后尽快删除</td></tr><tr><td>Cloudflare、Supabase 等服务日志</td><td>按安全需要和服务商设置保存，一般仅用于网站或接口安全，不用于营销画像</td></tr></table>
+      <p>如果您申请注销激活码并退款，我会停止继续使用相应授权信息；除订单、退款、反欺诈或法律要求必须保留的最少记录外，可关联您的设备和抖音账号的信息将按您的请求删除或匿名化。</p>
+    </section>
+
+    <section><h2>六、企业用户怎样保护聊天数据</h2>
+      <p>企业聊天可能包含客户联系方式、订单、商业秘密和员工信息。建议企业至少采取以下措施：</p>
+      <ul><li>在企业控制的专用电脑上运行，不与无关人员共用 Windows 账户；</li><li>启用 BitLocker 或其他磁盘加密，设置强密码和自动锁屏；</li><li>只采集完成具体工作所需的会话，不要一次性导出全部客户；</li><li>限制谁可以操作软件、查看数据库和复制导出文件，并保留必要的交接记录；</li><li>不要通过普通群聊、公共网盘或私人邮箱随意传输完整导出文件；</li><li>售后排查只发送脱敏日志，不发送真实客户聊天；</li><li>项目结束、员工离职或电脑交接前，确认备份范围并清理本地登录状态及数据。</li></ul>
+      <p>企业决定把聊天用于客户管理、员工管理、AI分析、诉讼或向其他公司提供时，应自行确认具有合法处理依据，并履行适用的告知、同意、权限和安全义务。</p>
+    </section>
+
+    <section><h2>七、聊天对象、敏感信息和未成年人</h2>
+      <p>聊天记录不仅包含您的信息，也可能包含聊天对象、群成员或客户的信息。您应只处理自己有权访问并具有合法用途的数据，不得擅自出售、公开或用于骚扰、诈骗、监控等目的。</p>
+      <p>如果聊天中包含身份证件、金融账户、医疗、精确位置、特定身份、私密通信或不满14周岁未成年人的信息，泄露后风险更高。您应减少采集和传播，并根据实际情况取得必要的单独同意、监护人同意或具备其他合法依据。</p>
+      <p>本服务面向成年人。未满18周岁者不得自行购买和使用。</p>
+    </section>
+
+    <section><h2>八、您的权利和安全事件</h2>
+      <p>您可以要求查询、复制、更正或删除后台中与您有关的信息，也可以撤回同意、注销激活码或投诉。请通过本政策第一条的电话、微信/QQ或邮箱联系。为防止他人冒充，我可能要求核对付款时间、激活码或订单，但不会要求提供完整聊天内容。</p>
+      <p>如果发生或可能发生信息泄露、篡改或丢失，我会及时采取补救措施，并依法告知可能的影响、已经采取的措施、您可以采取的措施和联系方式；需要时向有关主管部门报告。</p>
+      <p>如您发现安装包中夹带他人数据库、浏览器登录状态或导出文件，请立即停止下载、传播和使用，并联系我处理。</p>
+    </section>
+
+    <section><h2>九、政策更新</h2>
+      <p>如果软件开始上传新的信息、增加统计或广告、改变 Supabase 地区或引入新的服务商，我会更新本政策并在必要时重新取得您的同意。已经购买的用户不会因为政策更新而被追溯扩大数据用途。</p>
+    </section>
+
+    <p>本政策与<a href="用户协议.html">《用户协议》</a>共同构成服务规则。涉及隐私保护的内容不一致时，以更有利于保护个人信息权益的合法约定为准。</p>
+    <p class="foot">抖音聊天档案助手隐私政策 · 版本1.1</p>    </article>
+  </main>
+  <footer class="site-footer section-shell legal-footer">
+    <a class="brand" href="./"><img class="brand-logo" src="images/site-icon.png" alt="" /><span>抖音聊天档案助手</span></a>
+    <p>规则文件 · 版本 1.1</p>
+    <div class="footer-actions"><a href="用户协议.html">用户协议</a><a href="./">返回主页</a><a href="#top">回到顶部 ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

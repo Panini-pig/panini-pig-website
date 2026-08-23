@@ -56,7 +56,7 @@ html[data-theme="dark"] .site-nav a:not(.nav-download).active { color:#ff9988; }
 @media (min-width:801px) and (max-width:1150px) { .site-header { padding:0 20px; }.site-header .brand>span:last-child { display:none; }.theme-toggle { margin-right:11px; }.site-nav { gap:16px; font-size:13px; }.nav-download { padding:10px 14px; } }
 
 /* Purchase layout and theme refinements. */
-.site-nav { gap:24px; }.pricing-panel { display:grid; gap:14px; }.pricing-panel>.go-pay { margin-top:0; max-width:100%; background:var(--coral); box-shadow:0 10px 22px #ff614940; }.price-card { min-height:210px; }.download-links a { background:#fff; }.payment-grid figcaption { color:#1b2030; }
+.site-nav { gap:24px; }.pricing-panel { display:grid; gap:14px; }.pricing-panel>.go-pay { margin-top:0; max-width:100%; background:var(--coral); box-shadow:0 10px 22px #ff614940; text-align:center; }.price-card { min-height:210px; }.download-links a { background:#fff; }.payment-grid figcaption { color:#1b2030; }
 html[data-theme="dark"] .site-nav { background:#171d2b; border-color:#344057; box-shadow:0 18px 40px #05081166; }
 html[data-theme="dark"] .download-links a { background:#232b3d; border-color:#3a465f; color:#f2f4fa; }
 html[data-theme="dark"] .download-links small { color:#abb4c5; }
@@ -192,3 +192,59 @@ html[data-theme="dark"] .version-archive { background:#2b2229; border-color:#704
 html[data-theme="dark"] .faq-entry { background:linear-gradient(135deg,#1b2130 0%,#30242b 100%); border-color:#3b4357; }
 html[data-theme="dark"] .faq-entry-mark { background:#f2f4fa; color:#171b27; }
 @media (max-width:800px) { .faq-entry { margin-bottom:78px; padding:28px 24px; grid-template-columns:1fr; gap:28px; }.faq-entry::after { right:-15px; top:64%; }.faq-entry-action { align-items:flex-start; }.faq-entry-mark { display:none; } }
+/* Visual consistency audit 2026-08-24 */
+:root { --coral:#d94732; --coral-fill:#d33f2b; }
+html[data-theme="dark"] { --coral:#ff806d; --coral-fill:#d33f2b; }
+body,.site-header { transition:background-color .24s ease,color .24s ease,border-color .24s ease; }
+button,input,summary,a { -webkit-tap-highlight-color:transparent; }
+:where(a,button,input,summary):focus-visible { outline:3px solid color-mix(in srgb,var(--coral) 48%,transparent); outline-offset:3px; }
+.theme-toggle:hover { background:#0000000a; }
+html[data-theme="dark"] .theme-toggle:hover { background:#ffffff0d; }
+.eyebrow { color:#626b80; }
+html[data-theme="dark"] .eyebrow { color:#aeb6c7; }
+.eyebrow.light,.light { color:#fff; }
+.notice { color:var(--muted); }
+.chat-card { color:#1b2030; }
+.chat-card small { color:#667085; }
+.chat-card i { color:#c83f2d; }
+.version-card p,.download-links small { color:#667085; }
+html[data-theme="dark"] .version-card p { color:#b8c1d1; }
+html[data-theme="dark"] .price-label { color:#b8c1d1; }
+.button-primary,.go-pay,.download-tip>span,.boundary-card>span,.payment-action .safety-label,.faq-contact-links a,.faq-item[open] summary i,.release-notes[open] summary i,html .payment-contact { background:var(--coral-fill); }
+html .payment-contact p:last-child { color:#fff; }
+html .payment-contact a { color:#1b2030; }
+.checkout-summary strong { color:var(--coral); font:700 25px "DM Mono",monospace; white-space:nowrap; }
+.site-footer { color:var(--muted); }
+.site-footer>p { margin:0; }
+.footer-actions { flex-wrap:wrap; justify-content:flex-end; row-gap:9px; }
+.subpage-header,.faq-header { grid-template-columns:auto 1fr auto!important; }
+.subpage-header .theme-toggle,.faq-header .theme-toggle { justify-self:end; }
+.subpage-home-link,.faq-home-link { min-height:44px; display:inline-flex; align-items:center; justify-content:center; }
+.release-notes summary { min-height:48px; }
+.faq-filters { overscroll-behavior-inline:contain; }
+@media (max-width:800px) {
+  .subpage-header,.faq-header { display:grid; grid-template-columns:1fr auto auto!important; gap:8px; }
+  .subpage-header .brand>span,.faq-header .brand>span { display:none; }
+  .subpage-header .theme-toggle,.faq-header .theme-toggle { min-height:42px; margin:0; }
+  .subpage-home-link,.faq-home-link { min-height:42px; padding:10px 12px; font-size:12px; }
+  .footer-actions { width:100%; justify-content:flex-start; gap:10px 16px; }
+  .checkout-summary { align-items:flex-start; flex-direction:column; gap:6px; }
+}
+@media (max-width:430px) {
+  h1 { font-size:clamp(36px,11vw,42px); }
+  .section-shell { width:min(100% - 32px,580px); }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; }
+  .reveal { opacity:1; transform:none; }
+}
+/* Contrast follow-up 2026-08-24 */
+html body .pricing-panel>.go-pay,html body .download-tip>span,html body .boundary-card>span,html body .payment-action .safety-label,html body .payment-action .go-pay,html body .faq-contact-links a,html body .faq-item[open] summary i,html body .release-notes[open] summary i,html body .payment-contact { background:var(--coral-fill); }
+html[data-theme="dark"] .eyebrow.light { color:#fff; }
+.subpage-home-link,.faq-home-link { color:var(--ink); }
+.version-badge { color:#884900; }
+.archive-badge { color:#8b3b2e; }
+.pan123-icon { background:#1768b5; }
+.download-links i,.screen-card figcaption small { color:#667085; }
+html[data-theme="dark"] .download-links i,html[data-theme="dark"] .screen-card figcaption small { color:#aeb6c7; }

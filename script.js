@@ -88,7 +88,7 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
-const payButton = document.querySelector('.go-pay');
+const payButton = document.querySelector('[data-payment-dialog]');
 const purchaseDialog = document.querySelector('.purchase-dialog');
 const dialogClose = document.querySelector('.dialog-close');
 
