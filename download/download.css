@@ -4,3 +4,4 @@ html[data-theme="light"] .download-tip{background:#fff;color:var(--ink);border:1
 html[data-theme="light"] .download-tip p{color:var(--muted)}
 html[data-theme="dark"] .download-tip{background:var(--navy);color:#fff;border:1px solid #2c3549;box-shadow:0 24px 50px #05081152}
 html[data-theme="dark"] .download-tip p{color:#c4ccdc}
+.version-previous .download-links{grid-template-columns:repeat(2,1fr)}@media(max-width:800px){.version-previous .download-links{grid-template-columns:1fr}}
