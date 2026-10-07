@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="payment.css" />
+  <link rel="stylesheet" href="../design.css" />
 </head>
 <body class="subpage payment-page" id="top">
   <header class="site-header subpage-header">
@@ -21,16 +22,16 @@
   </header>
   <main>
     <section class="payment-hero section-shell">
-      <div class="reveal"><p class="eyebrow"><span></span> PURCHASE</p><h1>付款前，先确认<br /><em>价格与流程。</em></h1><p>付款码默认隐藏。请先阅读注意事项，确认无误后再点击页面中的按钮显示。</p></div>
-      <div class="payment-price-grid reveal"><article class="price-card featured"><span class="price-label">首次使用</span><strong>¥14.9</strong><p>首次获取激活码</p></article><article class="price-card"><span class="price-label">后续使用</span><strong>¥9.9</strong><p>后续每次使用</p></article></div>
+      <div class="reveal"><p class="eyebrow"><span></span> 购买与激活</p><h1>先确认记录，<br /><em>再决定导出。</em></h1><p>采集和查看结果免费。确认所需内容后，按实际使用情况付款；激活码由作者核实后人工发送。</p><a class="subtle-link" href="../download/">还没体验？先下载工具</a></div>
+      <div class="payment-price-grid reveal"><article class="price-card featured"><span class="price-label">首次使用</span><strong>¥14.9</strong><p>首次获取激活码</p></article><article class="price-card"><span class="price-label">后续使用</span><strong>¥9.9</strong><p>后续每次使用</p></article><article class="price-card"><span class="price-label">我用个人电脑来代操作</span><strong>¥19.9</strong><p>具体操作安排请联系作者确认</p></article></div>
     </section>
     <section class="payment-content section-shell">
       <div class="payment-guide-heading reveal">
-        <p class="eyebrow"><span></span> BEFORE PAYMENT</p><h2>付款与激活说明</h2>
+        <p class="eyebrow"><span></span> 付款前请了解</p><h2>三步获取激活码</h2>
       </div>
       <div class="payment-columns">
-        <ol class="payment-guide-list reveal"><li><span>01</span><div><h3>按使用情况选择金额</h3><p>首次使用支付 ¥14.9；后续每次使用支付 ¥9.9，请勿重复或多付。</p></div></li><li><span>02</span><div><h3>付款后保存成功截图</h3><p>付款完成后，请保留能清晰显示金额与支付结果的截图。</p></div></li><li><span>03</span><div><h3>发送截图并等待回复</h3><p>通过微信、QQ 或邮箱发送付款截图，核实到账后会人工回复激活码。</p></div></li></ol>
-        <aside class="payment-action reveal"><span class="safety-label">付款码默认隐藏</span><h2>已经确认注意事项？</h2><p>点击后会在弹窗中显示微信和支付宝付款码。本页面不会自动扣款，也不会收集你的付款信息。</p><button class="go-pay" type="button" data-payment-dialog>显示付款码</button><small>付款前如有疑问，请先联系作者确认。</small></aside>
+        <ol class="payment-guide-list reveal"><li><span>01</span><div><h3>按使用情况选择金额</h3><p>首次使用 ¥14.9；后续使用 ¥9.9；由我用个人电脑代操作 ¥19.9。代操作请先联系作者确认安排。</p></div></li><li><span>02</span><div><h3>付款后保存成功截图</h3><p>付款完成后，请保留能清晰显示金额与支付结果的截图。</p></div></li><li><span>03</span><div><h3>发送截图并等待回复</h3><p>通过微信、QQ 或邮箱发送付款截图，核实到账后会人工回复激活码或确认代操作安排。</p></div></li></ol>
+        <aside class="payment-action reveal"><span class="safety-label">微信 / 支付宝</span><h2>准备好导出？</h2><p>选择对应价格后打开付款码。代操作请先联系作者确认安排；付款后保存成功截图，并通过下方联系方式发送给作者。</p><button class="go-pay" type="button" data-payment-dialog>查看付款码</button><small>页面不会自动扣款；付款码仅在弹窗中显示。</small></aside>
       </div>
     </section>
     <section class="payment-contact section-shell reveal"><div><p class="eyebrow light"><span></span> CONTACT</p><h2>付款后发送截图</h2><p>微信 / QQ：<strong>2778934515</strong></p></div><a href="mailto:2778934515@qq.com">2778934515@qq.com <span>↗</span></a></section>
@@ -38,8 +39,8 @@
   <footer class="site-footer section-shell"><a class="brand" href="../"><img class="brand-logo" src="../images/site-icon.png" alt="" /><span>抖音聊天档案助手</span></a><p>请确认价格与使用规则后再付款。</p><div class="footer-actions"><a href="../download/">版本下载</a><a href="../faq/">常见问题</a><a href="../用户协议.html">用户协议</a><a href="../隐私政策.html">隐私政策</a><a href="#top">回到顶部 ↑</a></div></footer>
   <dialog class="purchase-dialog" aria-labelledby="purchase-title">
     <div class="purchase-dialog-header"><div><p class="eyebrow"><span></span> PAYMENT CODE</p><h2 id="purchase-title">选择付款方式</h2></div><button class="dialog-close" type="button" aria-label="关闭付款码弹窗">×</button></div>
-    <div class="checkout-summary"><span>请按实际使用情况填写金额</span><strong>¥14.9 / ¥9.9</strong></div>
-    <p class="purchase-description">选择任一方式扫码付款。付款完成后，请保存成功截图并发送给作者。</p>
+    <div class="checkout-summary"><span>请按实际使用情况填写金额</span><strong>¥14.9 / ¥9.9 / ¥19.9</strong></div>
+    <p class="purchase-description">选择微信或支付宝扫码付款。手机访问时可长按保存付款码，再到支付应用中识别图片。付款后请保存成功截图并发送给作者。</p>
     <div class="payment-grid"><figure><img src="../images/wechat-pay.jpg" alt="微信收款码" /><figcaption><b>微信支付</b><span>使用微信扫一扫</span></figcaption></figure><figure><img src="../images/alipay.jpg" alt="支付宝收款码" /><figcaption><b>支付宝</b><span>打开支付宝扫一扫</span></figcaption></figure></div>
     <p class="payment-note">关闭弹窗后，付款码将再次隐藏。</p>
   </dialog>

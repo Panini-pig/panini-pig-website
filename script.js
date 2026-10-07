@@ -98,3 +98,21 @@ dialogClose?.addEventListener('click', () => purchaseDialog?.close());
 purchaseDialog?.addEventListener('click', (event) => {
   if (event.target === purchaseDialog) purchaseDialog.close();
 });
+
+const previewDialog = document.querySelector('.preview-dialog');
+const previewImage = previewDialog?.querySelector('img');
+const previewTitle = previewDialog?.querySelector('#preview-title');
+document.querySelectorAll('.format-thumb').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    if (!previewDialog || !previewImage || !previewTitle) return;
+    event.preventDefault();
+    previewTitle.textContent = link.dataset.previewTitle;
+    previewImage.src = link.href;
+    previewImage.alt = link.dataset.previewTitle;
+    previewDialog.showModal();
+  });
+});
+previewDialog?.querySelector('.preview-close')?.addEventListener('click', () => previewDialog.close());
+previewDialog?.addEventListener('click', (event) => {
+  if (event.target === previewDialog) previewDialog.close();
+});
